@@ -12,15 +12,16 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #5a656e;
+  background-color: #2b2b2b;
 }
 
 a {
-  color: #d43076;
+  color: #13ff71;
   text-decoration: none;
 }
 
 a:hover {
-  color: #dd5a92;
+  color: #131313;
   text-decoration: none;
 }
 
@@ -43,7 +44,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 9999;
-  background: #d43076;
+  background: #13ff71;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +58,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #db528c;
+  background: #13ff71;
   color: #fff;
 }
 
@@ -74,7 +75,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   height: 60px;
-  background: #fff;
+  background: #141414;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -133,7 +134,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 14px;
-  color: #2c4964;
+  color: #cecece;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -149,7 +150,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #d43076;
+  color: #13ff71;
 }
 
 .navbar .dropdown ul {
@@ -184,7 +185,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #d43076;
+  color: #13ff71;
 }
 
 .navbar .dropdown:hover > ul {
@@ -283,7 +284,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #d43076;
+  color: #13ff71;
 }
 
 .navbar-mobile .getstarted,
@@ -318,7 +319,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #d43076;
+  color: #13ff71;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -342,6 +343,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #hero h2 {
@@ -361,7 +363,7 @@ h6 {
 
 #hero .btn-get-started:hover {
   padding-top: 10px;
-  color: #d43076;
+  color: #13ff71;
 }
 
 @media (min-width: 1024px) {
@@ -388,10 +390,11 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
+  background-color: #202020;
 }
 
 .section-bg {
-  background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+  background-color: #2b2b2b;
 }
 
 .section-title {
@@ -413,7 +416,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #d43076;
+  background: #13ff71;
   bottom: 0;
   left: 0;
 }
@@ -427,13 +430,14 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background-color: #fcf2f7;
+  background-color: #202020;
   min-height: 40px;
 }
 
 .breadcrumbs h2 {
   font-size: 24px;
   font-weight: 300;
+  color: #ffffff;
 }
 
 .breadcrumbs ol {
@@ -515,21 +519,21 @@ section {
   margin: 0 0 0 50px;
   font-family: "Playfair Display", serif;
   font-size: 14px;
-  color: #437099;
+  color: #ffffff;
 }
 
 .about .content .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #437099;
+  color: #dfdfdf;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .about .content .count-box a:hover {
-  color: #6b96be;
+  color: #d5d5d5;
 }
 
 .about .image {
@@ -586,7 +590,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #dd5a92;
+  background-color: #13ff71;
 }
 
 /*--------------------------------------------------------------
@@ -604,7 +608,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #d43076;
+  border-left: 2px solid #13ff71;
   position: relative;
 }
 
@@ -618,7 +622,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4ebf3;
+  background: #2b2b2b;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 400;
@@ -647,7 +651,28 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #d43076;
+  border: 2px solid #13ff71;
+}
+
+/* Tekxt Diketik */
+
+.typing-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing-deleting 4s steps(40, end) infinite;
+  text-align: center;
+}
+
+@keyframes typing-deleting {
+  0%,
+  100% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -677,7 +702,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #d43076;
+  background: #13ff71;
   height: 100%;
   border-radius: 0px;
 }
@@ -690,7 +715,7 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #d43076;
+  background: #13ff71;
   transition: all 0.3s ease-in-out;
 }
 
@@ -726,7 +751,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #d43076;
+  color: #13ff71;
 }
 
 @media (max-width: 768px) {
@@ -768,7 +793,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #d43076;
+  color: #13ff71;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -880,11 +905,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d43076;
+  border: 1px solid #13ff71;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d43076;
+  background-color: #13ff71;
 }
 
 .portfolio-details .portfolio-info {
@@ -1001,11 +1026,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d43076;
+  border: 1px solid #13ff71;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d43076;
+  background-color: #13ff71;
 }
 
 @media (max-width: 767px) {
@@ -1025,7 +1050,7 @@ section {
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #d43076;
+  color: #13ff71;
 }
 
 .contact .contact-about p {
@@ -1043,7 +1068,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #d43076;
+  color: #13ff71;
   line-height: 0;
   padding: 8px 0;
   margin-right: 4px;
@@ -1052,11 +1077,11 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #d43076;
+  border: 1px solid #13ff71;
 }
 
 .contact .social-links a:hover {
-  background: #d43076;
+  background: #13ff71;
   color: #fff;
 }
 
@@ -1066,7 +1091,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #d43076;
+  color: #13ff71;
   line-height: 0;
   margin-right: 15px;
 }
@@ -1079,7 +1104,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #2c02ff;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1126,11 +1151,11 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #d43076;
+  border-color: #13ff71;
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #d43076;
+  background: #13ff71;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1139,7 +1164,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #dd5a92;
+  background: #13ff71;
 }
 
 @keyframes animate-loading {
@@ -1156,7 +1181,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  background: #131313;
   padding: 24px 0;
   font-size: 14px;
   box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.12);
@@ -1169,5 +1194,5 @@ section {
 #footer .credits {
   padding-top: 8px;
   text-align: center;
-  font-size: 13px;
+  font-size: 30px;
 }
